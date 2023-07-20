@@ -54,8 +54,12 @@
               </button>
             </form>
           </div>
-          <div v-if="loading === true">
-            <div role="status">
+          <div v-if="loading === true" class="mt-10">
+            <div class="flex items-center gap-4">
+              <div class="text-gray-900 dark:text-white font-bold">
+                <p>Generating reviews. Please wait..</p>
+              </div>
+              <div role="status">
               <svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                 viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -67,6 +71,8 @@
               </svg>
               <span class="sr-only">Loading...</span>
             </div>
+            </div>
+
           </div>
           <div v-if="(loading === false) && showResults"
             class="my-10 backdrop-blur-md bg-gray-900/80 md:p-10 rounded-xl py-6 md:py-10 px-2">
