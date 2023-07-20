@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@twuni/emojify": "^1.0.2",
     "axios": "^1.4.0",
     "flowbite": "^1.7.0",
     "vue": "^3.3.4",
