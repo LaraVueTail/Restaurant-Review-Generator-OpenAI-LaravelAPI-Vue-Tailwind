@@ -21,7 +21,7 @@ class OpenAIService
             // 'topP' => 1,
             // 'n' => 1,
 
-            'model' => 'text-davinci-002',
+            'model' => 'text-davinci-003',
             'prompt' => $prompt,
             'temperature' => 0.9,
             'max_tokens' => 100,
